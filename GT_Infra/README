@@ -1,0 +1,5 @@
+*Make sure you have Python 3.7
+*Make sure you have the library needed: selenium, time, pytest
+* I added more tests to the test plan
+* I used pytest to control the tests, I added Fixtures (pre-condition) and finalizer (post-condition)
+* I added logs.

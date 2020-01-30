@@ -1,0 +1,1 @@
+python -m pytest -v test_translate.py
