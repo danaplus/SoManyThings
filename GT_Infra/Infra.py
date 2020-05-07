@@ -1,5 +1,5 @@
 """
-This file was created for Chegg
+This file was created for fun
 Author:
     v-daeder - Dana Eder
 Date:

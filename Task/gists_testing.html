@@ -240,8 +240,8 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <h1>TaskForIntsight.html</h1>
-    <p>Report generated on 25-Jan-2020 at 12:42:20 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <h1>gists_testing.html</h1>
+    <p>Report generated on 05-May-2020 at 16:19:59 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -257,8 +257,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.3</td></tr></table>
     <h2>Summary</h2>
-    <p>6 tests ran in 6.44 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">2 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>6 tests ran in 2.72 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">3 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">2 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -269,56 +269,56 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">gists_testing.py::test_create_new_gist</td>
+          <td class="col-duration">0.44</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">def test_create_new_gist():<br/>        result = gists_api.post(&#x27;dana.py&#x27;, &quot;I&#x27;m Awsom&quot;, &quot;print(&#x27;I just learned RESTAPI&#x27;)&quot;)<br/>    <br/>&gt;       assert result.status_code == 201, &#x27;Post msg Failed!&#x27;<br/><span class="error">E       AssertionError: Post msg Failed!</span><br/><span class="error">E       assert 401 == 201</span><br/><span class="error">E        +  where 401 = &lt;Response [401]&gt;.status_code</span><br/><br/>gists_testing.py:77: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">gists_testing.py::test_edit_last_git</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">def test_edit_last_git():<br/>&gt;       assert gists_api.gist_id, &quot;No gist_id&quot;<br/><span class="error">E       AssertionError: No gist_id</span><br/><span class="error">E       assert None</span><br/><span class="error">E        +  where None = &lt;gists_testing.GistAPI object at 0x000002D16C7D8240&gt;.gist_id</span><br/><br/>gists_testing.py:85: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">gists_testing.py::test_get_revision</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">def test_get_revision():<br/>&gt;       assert gists_api.gist_id, &quot;No gist_id&quot;<br/><span class="error">E       AssertionError: No gist_id</span><br/><span class="error">E       assert None</span><br/><span class="error">E        +  where None = &lt;gists_testing.GistAPI object at 0x000002D16C7D8240&gt;.gist_id</span><br/><br/>gists_testing.py:91: AssertionError<br/></div></td></tr></tbody>
       <tbody class="xfailed results-table-row">
         <tr>
           <td class="col-result">XFailed</td>
-          <td class="col-name">Infra/Versions/TaskForIntsight.py::test_start_git</td>
-          <td class="col-duration">0.42</td>
+          <td class="col-name">gists_testing.py::test_start_git</td>
+          <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">@pytest.mark.xfail<br/>    def test_start_git():<br/>        assert gists_api.gist_id, &quot;No gist_id&quot;<br/>        result = gists_api.put(f&#x27;/{gists_api.gist_id}/star&#x27;)<br/>&gt;       assert result.status_code == 204, &#x27;Star msg Failed!&#x27; % json.loads(result.content.decode(&#x27;utf-8&#x27;))<br/><span class="error">E       AssertionError: Star msg Failed!</span><br/><span class="error">E       assert 404 == 204</span><br/><span class="error">E        +  where 404 = &lt;Response [404]&gt;.status_code</span><br/><br/>TaskForIntsight.py:101: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">@pytest.mark.xfail<br/>    def test_start_git():<br/>&gt;       assert gists_api.gist_id, &quot;No gist_id&quot;<br/><span class="error">E       AssertionError: No gist_id</span><br/><span class="error">E       assert None</span><br/><span class="error">E        +  where None = &lt;gists_testing.GistAPI object at 0x000002D16C7D8240&gt;.gist_id</span><br/><br/>gists_testing.py:98: AssertionError<br/></div></td></tr></tbody>
       <tbody class="xfailed results-table-row">
         <tr>
           <td class="col-result">XFailed</td>
-          <td class="col-name">Infra/Versions/TaskForIntsight.py::test_delete_star</td>
-          <td class="col-duration">0.40</td>
+          <td class="col-name">gists_testing.py::test_delete_star</td>
+          <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">@pytest.mark.xfail<br/>    def test_delete_star():<br/>        assert gists_api.gist_id, &quot;No gist_id&quot;<br/>        result = gists_api.delete(f&#x27;/{gists_api.gist_id}/star&#x27;)<br/>&gt;       assert result.status_code == 204, &#x27;Star delete msg Failed!&#x27; % json.loads(result.content.decode(&#x27;utf-8&#x27;))<br/><span class="error">E       AssertionError: Star delete msg Failed!</span><br/><span class="error">E       assert 404 == 204</span><br/><span class="error">E        +  where 404 = &lt;Response [404]&gt;.status_code</span><br/><br/>TaskForIntsight.py:108: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">@pytest.mark.xfail<br/>    def test_delete_star():<br/>&gt;       assert gists_api.gist_id, &quot;No gist_id&quot;<br/><span class="error">E       AssertionError: No gist_id</span><br/><span class="error">E       assert None</span><br/><span class="error">E        +  where None = &lt;gists_testing.GistAPI object at 0x000002D16C7D8240&gt;.gist_id</span><br/><br/>gists_testing.py:105: AssertionError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">Infra/Versions/TaskForIntsight.py::test_list_user_gists</td>
-          <td class="col-duration">1.01</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Infra/Versions/TaskForIntsight.py::test_create_new_gist</td>
-          <td class="col-duration">1.74</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Infra/Versions/TaskForIntsight.py::test_edit_last_git</td>
-          <td class="col-duration">1.25</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">Infra/Versions/TaskForIntsight.py::test_get_revision</td>
-          <td class="col-duration">0.46</td>
+          <td class="col-name">gists_testing.py::test_list_user_gists</td>
+          <td class="col-duration">1.42</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
